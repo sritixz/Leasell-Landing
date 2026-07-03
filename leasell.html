@@ -154,6 +154,7 @@
       background: oklab(100% 0 0 / .7);
       border: 1px solid oklab(100% 0 0 / .6);
     }
+    
 
   </style>
 </head>
@@ -905,12 +906,35 @@ Premium Commercial Bar &amp; Restaurant space
         </div>
       </section>
     </main>
-    <footer class="border-t border-slate-100 py-10">
-      <div class="mx-auto max-w-7xl px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-4">
-        <div class="flex items-center gap-2">
-          <div class="h-7 w-7 rounded-lg bg-gradient-primary grid place-items-center"><span class="material-symbols-outlined text-white text-sm">graph_4</span></div><span class="font-display font-semibold text-slate-brand">LEASELL</span><span class="text-xs text-muted-foreground">· By Brokers. For Brokers.</span>
+    <!-- =========================================================
+         RESOLVED GAP 3: EXTENDED SITEMAP & LEGAL FOOTER
+         ========================================================= -->
+    <footer class="border-t border-slate-100 bg-white pt-16 pb-10">
+      <div class="mx-auto max-w-7xl px-6 md:px-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 pb-12 border-b border-slate-100">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <div class="h-6 w-6 rounded-lg bg-gradient-primary grid place-items-center"><span class="material-symbols-outlined text-white text-xs">graph_4</span></div>
+              <span class="font-display font-semibold text-slate-brand text-sm tracking-tight">LEASELL</span>
+            </div>
+            <p class="text-xs text-muted-foreground leading-relaxed">Turning real estate broadcast noise into high-fidelity verified matching pipelines across competitive markets.</p>
+          </div>
+          <div>
+            <h4 class="font-display font-semibold text-slate-brand text-xs uppercase tracking-wider mb-4">Platform</h4>
+            <ul class="space-y-2 text-xs text-muted-foreground"><li class="hover:text-primary transition-colors"><a href="#parser">AI Ingestion Layer</a></li><li class="hover:text-primary transition-colors"><a href="#pipeline">Broker Telemetry</a></li><li class="hover:text-primary transition-colors"><a href="#brokerhood">The Brokerhood Network</a></li></ul>
+          </div>
+          <div>
+            <h4 class="font-display font-semibold text-slate-brand text-xs uppercase tracking-wider mb-4">Company</h4>
+            <ul class="space-y-2 text-xs text-muted-foreground"><li class="hover:text-primary transition-colors"><a href="#">About Workspace</a></li><li class="hover:text-primary transition-colors"><a href="#pricing">Pricing Plans</a></li><li class="hover:text-primary transition-colors"><a href="#">Early Access Pilot</a></li></ul>
+          </div>
+          <div>
+            <h4 class="font-display font-semibold text-slate-brand text-xs uppercase tracking-wider mb-4">Compliance & Security</h4>
+            <ul class="space-y-2 text-xs text-muted-foreground"><li class="hover:text-primary transition-colors"><a href="#">Privacy Agreement</a></li><li class="hover:text-primary transition-colors"><a href="#">Terms of Service</a></li><li class="hover:text-primary transition-colors"><a href="#">Data Encryption Protocol</a></li></ul>
+          </div>
         </div>
-        <div class="text-xs text-muted-foreground">© <!-- -->2026<!-- --> Leasell Technologies. All rights reserved.</div>
+        <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div class="text-xs text-muted-foreground">© 2026 Leasell Technologies. All rights reserved. Built by Brokers. For Brokers.</div>
+        </div>
       </div>
     </footer>
   </div><!--/$-->
@@ -1019,6 +1043,26 @@ Premium Commercial Bar &amp; Restaurant space
       if (btn) {
         btn.classList.add("bg-gradient-primary", "text-white", "shadow-elegant");
         btn.classList.remove("text-slate-brand");
+      }
+    }
+    function toggleFaq(button) {
+      const parent = button.parentElement;
+      const answer = parent.querySelector('.faq-answer');
+      const icon = button.querySelector('.material-symbols-outlined');
+      
+      if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
+        answer.style.maxHeight = '0px';
+        icon.style.transform = 'rotate(0deg)';
+        parent.classList.remove('border-primary/30', 'shadow-sm');
+      } else {
+        // Close all other open items for a strict accordion behavior
+        document.querySelectorAll('.faq-answer').forEach(el => el.style.maxHeight = '0px');
+        document.querySelectorAll('.material-symbols-outlined').forEach(el => el.style.transform = 'rotate(0deg)');
+        document.querySelectorAll('#faq > div > div > div').forEach(el => el.classList.remove('border-primary/30', 'shadow-sm'));
+        
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        icon.style.transform = 'rotate(180deg)';
+        parent.classList.add('border-primary/30', 'shadow-sm');
       }
     }
 
