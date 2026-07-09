@@ -17,7 +17,7 @@ module.exports = {
         },
         muted: {
           DEFAULT: 'oklch(96% .01 260)',
-          foreground: 'oklch(48% .03 260)'
+          foreground: 'oklch(47% .03 260)'
         },
         accent: {
           DEFAULT: 'oklch(94% .02 260)',
