@@ -463,21 +463,21 @@ Premium Commercial Bar &amp; Restaurant space
                     <div class="flex-1 min-w-0">
                       <div class="text-xs font-semibold truncate">Rahul S.</div>
                       <div class="text-[10px] text-white/70 truncate">3BHK · Bandra · ₹5Cr</div>
-                    </div><button class="h-7 w-7 rounded-full bg-emerald grid place-items-center flex-shrink-0"><span class="material-symbols-outlined text-white text-sm">chat</span></button>
+                    </div><button aria-label="Chat with Rahul S." class="h-7 w-7 rounded-full bg-emerald grid place-items-center flex-shrink-0"><span class="material-symbols-outlined text-white text-sm">chat</span></button>
                   </div>
                   <div class="flex items-center gap-3 rounded-lg bg-white/15 px-3 py-2">
                     <div class="h-8 w-8 rounded-full bg-white text-primary font-semibold text-[10px] grid place-items-center flex-shrink-0">DK</div>
                     <div class="flex-1 min-w-0">
                       <div class="text-xs font-semibold truncate">Deepak K.</div>
                       <div class="text-[10px] text-white/70 truncate">Warehouse · Bhiwandi</div>
-                    </div><button class="h-7 w-7 rounded-full bg-emerald grid place-items-center flex-shrink-0"><span class="material-symbols-outlined text-white text-sm">chat</span></button>
+                    </div><button aria-label="Chat with Deepak K." class="h-7 w-7 rounded-full bg-emerald grid place-items-center flex-shrink-0"><span class="material-symbols-outlined text-white text-sm">chat</span></button>
                   </div>
                   <div class="flex items-center gap-3 rounded-lg bg-white/15 px-3 py-2">
                     <div class="h-8 w-8 rounded-full bg-white text-primary font-semibold text-[10px] grid place-items-center flex-shrink-0">AM</div>
                     <div class="flex-1 min-w-0">
                       <div class="text-xs font-semibold truncate">Aditi M.</div>
                       <div class="text-[10px] text-white/70 truncate">Office · BKC · 2000sqft</div>
-                    </div><button class="h-7 w-7 rounded-full bg-emerald grid place-items-center flex-shrink-0"><span class="material-symbols-outlined text-white text-sm">chat</span></button>
+                    </div><button aria-label="Chat with Aditi M." class="h-7 w-7 rounded-full bg-emerald grid place-items-center flex-shrink-0"><span class="material-symbols-outlined text-white text-sm">chat</span></button>
                   </div>
                 </div>
               </div>
@@ -579,7 +579,7 @@ Premium Commercial Bar &amp; Restaurant space
                   <div>
                     <div class="text-[10px] uppercase tracking-wider text-white/50">Closed</div>
                     <div class="font-mono font-semibold text-emerald text-sm">42</div>
-                  </div><button class="h-9 w-9 rounded-full bg-emerald grid place-items-center hover:scale-105 transition"><span class="material-symbols-outlined text-white text-base">call</span></button>
+                  </div><button aria-label="Call Deepak K." class="h-9 w-9 rounded-full bg-emerald grid place-items-center hover:scale-105 transition"><span class="material-symbols-outlined text-white text-base">call</span></button>
                 </div>
               </div>
               <div class="rounded-2xl bg-white/[0.07] border border-white/10 p-5 hover:bg-white/[0.1] transition group reveal-on-scroll">
@@ -594,7 +594,7 @@ Premium Commercial Bar &amp; Restaurant space
                   <div>
                     <div class="text-[10px] uppercase tracking-wider text-white/50">Closed</div>
                     <div class="font-mono font-semibold text-emerald text-sm">38</div>
-                  </div><button class="h-9 w-9 rounded-full bg-emerald grid place-items-center hover:scale-105 transition"><span class="material-symbols-outlined text-white text-base">call</span></button>
+                  </div><button aria-label="Call Rahul S." class="h-9 w-9 rounded-full bg-emerald grid place-items-center hover:scale-105 transition"><span class="material-symbols-outlined text-white text-base">call</span></button>
                 </div>
               </div>
               <div class="rounded-2xl bg-white/[0.07] border border-white/10 p-5 hover:bg-white/[0.1] transition group reveal-on-scroll">
@@ -609,7 +609,7 @@ Premium Commercial Bar &amp; Restaurant space
                   <div>
                     <div class="text-[10px] uppercase tracking-wider text-white/50">Closed</div>
                     <div class="font-mono font-semibold text-emerald text-sm">29</div>
-                  </div><button class="h-9 w-9 rounded-full bg-emerald grid place-items-center hover:scale-105 transition"><span class="material-symbols-outlined text-white text-base">call</span></button>
+                  </div><button aria-label="Call Priya M." class="h-9 w-9 rounded-full bg-emerald grid place-items-center hover:scale-105 transition"><span class="material-symbols-outlined text-white text-base">call</span></button>
                 </div>
               </div>
               <div class="rounded-2xl bg-white/[0.07] border border-white/10 p-5 hover:bg-white/[0.1] transition group reveal-on-scroll">
@@ -624,7 +624,7 @@ Premium Commercial Bar &amp; Restaurant space
                   <div>
                     <div class="text-[10px] uppercase tracking-wider text-white/50">Closed</div>
                     <div class="font-mono font-semibold text-emerald text-sm">21</div>
-                  </div><button class="h-9 w-9 rounded-full bg-emerald grid place-items-center hover:scale-105 transition"><span class="material-symbols-outlined text-white text-base">call</span></button>
+                  </div><button aria-label="Call Ankit V." class="h-9 w-9 rounded-full bg-emerald grid place-items-center hover:scale-105 transition"><span class="material-symbols-outlined text-white text-base">call</span></button>
                 </div>
               </div>
             </div>
@@ -821,33 +821,33 @@ Premium Commercial Bar &amp; Restaurant space
           <div class="space-y-4">
             <!-- FAQ Item 1 -->
             <div class="rounded-2xl border border-slate-200/60 bg-white p-6 transition-all duration-300">
-              <button type="button" onclick="toggleFaq(this)" class="flex w-full items-center justify-between font-display font-semibold text-left text-slate-brand md:text-lg">
+              <button type="button" id="faq-btn-1" aria-expanded="false" aria-controls="faq-answer-1" onclick="toggleFaq(this)" class="flex w-full items-center justify-between font-display font-semibold text-left text-slate-brand md:text-lg">
                 <span>Is my brokerage data secure? Who can see my parsed listings?</span>
                 <span class="material-symbols-outlined text-slate-400 transition-transform duration-300">expand_more</span>
               </button>
-              <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <div id="faq-answer-1" role="region" aria-labelledby="faq-btn-1" class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                 <p class="pt-4 text-sm md:text-base text-muted-foreground leading-relaxed">Your data belongs strictly to your workspace profile. Shared data parameters only execute anonymized metric points across the brokerhood matching index unless an explicit multi-broker pipeline channel is authorized by your administrator.</p>
               </div>
             </div>
 
             <!-- FAQ Item 2 -->
             <div class="rounded-2xl border border-slate-200/60 bg-white p-6 transition-all duration-300">
-              <button type="button" onclick="toggleFaq(this)" class="flex w-full items-center justify-between font-display font-semibold text-left text-slate-brand md:text-lg">
+              <button type="button" id="faq-btn-2" aria-expanded="false" aria-controls="faq-answer-2" onclick="toggleFaq(this)" class="flex w-full items-center justify-between font-display font-semibold text-left text-slate-brand md:text-lg">
                 <span>Does the AI support custom terminology or regional Indian pricing terms (Cr/Lakh)?</span>
                 <span class="material-symbols-outlined text-slate-400 transition-transform duration-300">expand_more</span>
               </button>
-              <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <div id="faq-answer-2" role="region" aria-labelledby="faq-btn-2" class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                 <p class="pt-4 text-sm md:text-base text-muted-foreground leading-relaxed">Yes. The engine is trained natively on localization patterns. It processes terminology variants such as "BHK", "carpet area", "super built-up", and normalizes financial notation metrics across lakhs and crores seamlessly into raw numerical states.</p>
               </div>
             </div>
 
             <!-- FAQ Item 3 -->
             <div class="rounded-2xl border border-slate-200/60 bg-white p-6 transition-all duration-300">
-              <button type="button" onclick="toggleFaq(this)" class="flex w-full items-center justify-between font-display font-semibold text-left text-slate-brand md:text-lg">
+              <button type="button" id="faq-btn-3" aria-expanded="false" aria-controls="faq-answer-3" onclick="toggleFaq(this)" class="flex w-full items-center justify-between font-display font-semibold text-left text-slate-brand md:text-lg">
                 <span>Can I integrate my existing CRM systems with the Leasell dashboard?</span>
                 <span class="material-symbols-outlined text-slate-400 transition-transform duration-300">expand_more</span>
               </button>
-              <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <div id="faq-answer-3" role="region" aria-labelledby="faq-btn-3" class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                 <p class="pt-4 text-sm md:text-base text-muted-foreground leading-relaxed">Enterprise tier profiles get native data webhook access and dedicated API paths to export structured JSON payloads into platforms like Salesforce, HubSpot, or localized operational property portals instantly.</p>
               </div>
             </div>
@@ -999,19 +999,24 @@ Premium Commercial Bar &amp; Restaurant space
       const answer = parent.querySelector('.faq-answer');
       const icon = button.querySelector('.material-symbols-outlined');
       
-      if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+      
+      // Close all other open items for a strict accordion behavior
+      document.querySelectorAll('.faq-answer').forEach(el => el.style.maxHeight = '0px');
+      document.querySelectorAll('#faq .material-symbols-outlined').forEach(el => el.style.transform = 'rotate(0deg)');
+      document.querySelectorAll('#faq button[onclick*="toggleFaq"]').forEach(btn => btn.setAttribute('aria-expanded', 'false'));
+      document.querySelectorAll('#faq > div > div > div').forEach(el => el.classList.remove('border-primary/30', 'shadow-sm'));
+      
+      if (isExpanded) {
         answer.style.maxHeight = '0px';
         icon.style.transform = 'rotate(0deg)';
         parent.classList.remove('border-primary/30', 'shadow-sm');
+        button.setAttribute('aria-expanded', 'false');
       } else {
-        // Close all other open items for a strict accordion behavior
-        document.querySelectorAll('.faq-answer').forEach(el => el.style.maxHeight = '0px');
-        document.querySelectorAll('.material-symbols-outlined').forEach(el => el.style.transform = 'rotate(0deg)');
-        document.querySelectorAll('#faq > div > div > div').forEach(el => el.classList.remove('border-primary/30', 'shadow-sm'));
-        
         answer.style.maxHeight = answer.scrollHeight + 'px';
         icon.style.transform = 'rotate(180deg)';
         parent.classList.add('border-primary/30', 'shadow-sm');
+        button.setAttribute('aria-expanded', 'true');
       }
     }
 
